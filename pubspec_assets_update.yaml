@@ -1,0 +1,13 @@
+# Add these lines to the assets section in pubspec.yaml
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/icon/
+    - assets/images/
+    
+  # App icon configuration
+  # Note: Icons are already generated and placed in platform-specific directories
+  # iOS: ios/Runner/Assets.xcassets/AppIcon.appiconset/
+  # Android: android/app/src/main/res/mipmap-*/
