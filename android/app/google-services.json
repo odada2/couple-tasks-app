@@ -12,7 +12,36 @@
           "package_name": "com.duodo.partner"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "206034680472-6puf48g2339qdhird7o1p9f48m6h6d8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duodo.partner",
+            "certificate_hash": "9078648a7eec10825bfcdb7938172380b0fa87da"
+          }
+        },
+        {
+          "client_id": "206034680472-bakn6caem828s62ckh02mrkdv04rtijf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duodo.partner",
+            "certificate_hash": "3546db3435af1f8208564a3003062ecb1b77d129"
+          }
+        },
+        {
+          "client_id": "206034680472-u8tbsctjj0ttjh424e4lta1md7nhn707.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duodo.partner",
+            "certificate_hash": "2ef652602672aaa0eea4ff451f8cb5e014ebcf9e"
+          }
+        },
+        {
+          "client_id": "206034680472-nr7fdno170vru4j3oqikmt99ssd3argk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCEShbYJUDXaLov6rSOtJLaVPTcf8PrH34"
@@ -20,7 +49,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206034680472-nr7fdno170vru4j3oqikmt99ssd3argk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "206034680472-pd6i9mqvkn0soh4sjo99vn6c24b5qan0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.duodo.partner"
+              }
+            }
+          ]
         }
       }
     }
