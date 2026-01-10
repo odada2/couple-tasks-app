@@ -7,6 +7,8 @@ import '../models/task_model.dart';
 import '../utils/app_theme.dart';
 import 'new_task_screen.dart';
 import 'task_detail_screen.dart';
+import 'ai_assistant_screen.dart';
+import '../config/app_config.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -92,6 +94,19 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         actions: [
+          if (AppConfig.isAIEnabled)
+            IconButton(
+              icon: const Icon(Icons.smart_toy, color: AppTheme.primaryColor),
+              tooltip: 'AI Assistant',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AIAssistantScreen(),
+                  ),
+                );
+              },
+            ),
           IconButton(
             icon: const Icon(Icons.search),
             onPressed: () {

@@ -1,5 +1,7 @@
 import 'package:google_generative_ai/google_generative_ai.dart';
 
+import '../config/app_config.dart';
+
 /// Service for interacting with Google Gemini AI
 /// 
 /// This service provides AI-powered features for the Couple Tasks app:
@@ -18,14 +20,16 @@ class GeminiService {
   GenerativeModel? _model;
   bool _isInitialized = false;
 
-  /// Initialize the Gemini AI service with API key
+  /// Initialize the Gemini AI service
   /// 
-  /// The API key should be stored securely in environment variables
-  /// or Firebase Remote Config, never hardcoded in the app.
-  /// 
-  /// For development, you can get an API key from:
-  /// https://makersuite.google.com/app/apikey
-  Future<void> initialize(String apiKey) async {
+  /// Uses API key from AppConfig. The key is configured in
+  /// lib/config/app_config.dart
+  Future<void> initialize() async {
+    final apiKey = AppConfig.geminiApiKey;
+    
+    if (apiKey.isEmpty) {
+      throw Exception('Gemini API key not configured in AppConfig');
+    }
     try {
       _model = GenerativeModel(
         model: 'gemini-2.0-flash-exp',
