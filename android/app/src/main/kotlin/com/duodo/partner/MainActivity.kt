@@ -1,4 +1,4 @@
-package com.coupletasks.couple_tasks
+package com.duodo.partner
 
 import io.flutter.embedding.android.FlutterActivity
 

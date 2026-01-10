@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "206034680472",
+    "project_id": "yourspace-regional-68049",
+    "storage_bucket": "yourspace-regional-68049.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206034680472:android:caeaf951a08ba488552eed",
+        "android_client_info": {
+          "package_name": "com.duodo.partner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEShbYJUDXaLov6rSOtJLaVPTcf8PrH34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
